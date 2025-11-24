@@ -56,11 +56,11 @@ ApplicationPackageManager
     return-void
 .end method
 ```
-> ### Method:
+> ### This feature can easily cause bootloop, if you don't use it you can skip this Method:
 ```
 hasSystemFeature(Ljava/lang/String;)Z
 ```
-> Replace method with:
+> Replace all method (skip if bootloop):
 ```
 .method public hasSystemFeature(Ljava/lang/String;)Z
     .registers 3
