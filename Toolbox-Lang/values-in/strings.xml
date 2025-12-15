@@ -1,7 +1,7 @@
 <resources>
-    
+
     <!-- indonesian - by: Az-Har Muhamad Nayif -->
-    
+
     <!-- Common -->
     <string name="common_reset_to_default">Atur ulang ke default</string>
     <string name="common_snackbar_permission_needed">Mohon izinkan izin sebelum mengatur ulang.</string>
@@ -54,6 +54,7 @@
     <string name="device_info_fingerprint">Jejak jari</string>
     <string name="home_serial_hidden_label">Tampilkan</string>
     <string name="home_toast_copied">Disalin: %1$s</string>
+    <string name="home_user_avatar_content_description">Avatar pengguna</string>
 
     <!-- Features Tools -->
     <string name="features_group_features">Fitur</string>
@@ -75,11 +76,17 @@
     <string name="features_toggle_messenger_chathead_summary">Spoofing properti Galaxy S24 Ultra untuk Messenger agar tetap menggunakan chat heads klasik daripada bubble Android.</string>
     <string name="features_toggle_spoof_vending_title">Spoofing untuk Play Store</string>
     <string name="features_toggle_spoof_vending_summary">Spoofing konfigurasi untuk Google Play guna melewati SafetyNet/Play Integrity.</string>
+    <string name="features_toggle_spoof_keybox_title">Spoofing Keybox</string>
+    <string name="features_toggle_spoof_keybox_summary">Gunakan respons Keybox palsu untuk melewati Play Integrity.</string>
+    <string name="features_toggle_spoof_netflix_title">Spoofing Netflix</string>
+    <string name="features_toggle_spoof_netflix_summary">Samarkan sebagai perangkat Pixel untuk membuka beberapa fitur Netflix.</string>
     <string name="features_toggle_fps_patch_title">Buka patching file lanjutan</string>
     <string name="features_toggle_fps_patch_summary">Izinkan pembukaan konfigurasi game, mis. Teamfight Tactics,…</string>
     <string name="features_group_play_integrity">Google Play Integrity</string>
     <string name="features_toggle_spoof_gms_title">Spoofing Google Play Services</string>
     <string name="features_toggle_spoof_gms_summary">Terapkan properti Pixel ke Google Play Services saat sertifikasi diperlukan.</string>
+    <string name="features_toggle_spoof_provider_title">Spoof penyedia Keystore</string>
+    <string name="features_toggle_spoof_provider_summary">Mengganti penyedia Android Keystore untuk Google Play Services dan Play Store guna memalsukan key attestation.</string>
     <string name="features_toggle_spoof_attestation_title">Blokir attestasi</string>
     <string name="features_toggle_spoof_attestation_summary">Hapus attestasi kunci fitur dari aplikasi.</string>
     <string name="features_group_system_adjustments">Penyesuaian sistem</string>
@@ -178,6 +185,26 @@
     <string name="hidden_action_delete_rule">Hapus</string>
     <string name="hidden_message_missing_packages">%1$d konfigurasi aplikasi menargetkan aplikasi yang tidak terpasang.</string>
 
+    <!-- FPS Overlay -->
+    <string name="tool_page_fps_title">FPS</string>
+    <string name="tool_page_fps_summary">Tampilkan overlay FPS dan atur tampilannya.</string>
+    <string name="fps_title">Overlay FPS</string>
+    <string name="fps_permission_overlay">Izin overlay diperlukan untuk menampilkan FPS di atas aplikasi lain.</string>
+    <string name="fps_action_grant_overlay">Berikan izin overlay</string>
+    <string name="fps_toggle_enable">Aktifkan overlay FPS</string>
+    <string name="fps_position">Posisi</string>
+    <string name="fps_size">Ukuran teks</string>
+    <string name="fps_bg_color">Warna latar (#RRGGBB)</string>
+    <string name="fps_text_color">Warna teks (#RRGGBB)</string>
+    <string name="fps_bg_alpha">Opasitas latar</string>
+    <string name="fps_text_alpha">Opasitas teks</string>
+    <string name="fps_padding">Padding (dp)</string>
+    <string name="fps_apply">Terapkan</string>
+    <string name="fps_overlay_value">%1$.1f FPS</string>
+    <string name="fps_overlay_error">FPS tidak tersedia</string>
+    <string name="fps_error_color">Kode warna tidak valid</string>
+    <string name="fps_error_root">Akses root tidak diberikan; hanya memakai FPS framework.</string>
+
     <!-- Hide Developer -->
     <string name="hide_dev_message">Halo Hide Developer</string>
 
@@ -222,6 +249,9 @@
     <string name="settings_background_title">Gambar latar belakang</string>
     <string name="settings_background_not_set">Tidak diatur</string>
     <string name="settings_background_set">Gambar latar belakang dipilih</string>
+    <string name="settings_avatar_title">Avatar</string>
+    <string name="settings_avatar_not_set">Belum diatur</string>
+    <string name="settings_avatar_set">Avatar kustom dipilih</string>
     <string name="settings_section_about">Tentang</string>
     <string name="settings_version_title">Versi</string>
     <string name="settings_version_dev_enabled">Mode pengembang diaktifkan</string>
@@ -232,6 +262,17 @@
     <string name="settings_background_status_set">Gambar latar belakang dipilih</string>
     <string name="settings_action_choose_image">Pilih gambar</string>
     <string name="settings_action_remove_image">Hapus gambar</string>
+    <string name="settings_avatar_dialog_title">Avatar pengguna</string>
+    <string name="settings_avatar_dialog_description">Pilih gambar lokal atau tempel URL/nama pengguna Telegram.</string>
+    <string name="settings_avatar_action_choose_image">Pilih dari perangkat</string>
+    <string name="settings_avatar_action_remove">Hapus avatar</string>
+    <string name="settings_avatar_input_label">URL gambar atau nama pengguna Telegram</string>
+    <string name="settings_avatar_input_placeholder">https://… atau @username</string>
+    <string name="settings_avatar_action_fetch">Ambil gambar</string>
+    <string name="settings_avatar_loading">Sedang memproses…</string>
+    <string name="settings_avatar_toast_success">Avatar diperbarui</string>
+    <string name="settings_avatar_toast_removed">Avatar dihapus</string>
+    <string name="settings_avatar_toast_error">%1$s</string>
     <string name="settings_background_blur">Blur latar belakang: %1$.0f dp</string>
     <string name="settings_background_card_opacity">Opasitas overlay kartu: %1$d%%</string>
     <string name="settings_theme_dialog_title">Tema</string>
@@ -365,6 +406,9 @@
     <string name="main_tab_tools">Alat</string>
     <string name="main_dialog_preparing_data">Menyiapkan data</string>
     <string name="main_dialog_loading_message">Mengambil data yang diperlukan…</string>
+    <string name="main_dialog_framework_title">Framework diperlukan</string>
+    <string name="main_dialog_framework_message">Kaorios Toolbox memerlukan toolkit framework untuk berjalan.</string>
+    <string name="main_dialog_framework_open">Buka proyek GitHub</string>
     <string name="main_cd_app_logo">Logo aplikasi</string>
     <string name="main_cd_restart">Restart</string>
     <string name="main_cd_settings">Pengaturan</string>
