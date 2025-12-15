@@ -52,6 +52,7 @@
     <string name="device_info_fingerprint">Huella digital</string>
     <string name="home_serial_hidden_label">Mostrar</string>
     <string name="home_toast_copied">Copiado: %1$s</string>
+    <string name="home_user_avatar_content_description">Avatar del usuario</string>
 
     <!-- Features Tools -->
     <string name="features_group_features">Funciones</string>
@@ -73,11 +74,17 @@
     <string name="features_toggle_messenger_chathead_summary">Messenger mostrará burbujas de chat antiguas en lugar de las de Android</string>
     <string name="features_toggle_spoof_vending_title">Falsificar Play Store</string>
     <string name="features_toggle_spoof_vending_summary">Falsificar configuración de Google Play para superar SafetyNet/Play Integrity</string>
+    <string name="features_toggle_spoof_keybox_title">Falsificar Keybox</string>
+    <string name="features_toggle_spoof_keybox_summary">Aplicar respuestas Keybox falsas para omitir Play Integrity.</string>
+    <string name="features_toggle_spoof_netflix_title">Falsificar Netflix</string>
+    <string name="features_toggle_spoof_netflix_summary">Simular dispositivos Pixel para desbloquear ciertas funciones de Netflix.</string>
     <string name="features_toggle_fps_patch_title">Desbloquea parches de archivos avanzados</string>
     <string name="features_toggle_fps_patch_summary">Permite desbloquear configuraciones de juego, por ejemplo Teamfight Tactics…</string>
     <string name="features_group_play_integrity">Google Play Integrity</string>
     <string name="features_toggle_spoof_gms_title">Falsificar Google Play Services</string>
     <string name="features_toggle_spoof_gms_summary">Aplica propiedades de Pixel a los servicios de Google Play cuando se requiera certificación</string>
+    <string name="features_toggle_spoof_provider_title">Falsificar proveedor de Keystore</string>
+    <string name="features_toggle_spoof_provider_summary">Reemplaza el proveedor de Android Keystore para Google Play Services y Play Store a fin de falsificar la atestación de claves.</string>
     <string name="features_toggle_spoof_attestation_title">Bloquear la verificación del hardware</string>
     <string name="features_toggle_spoof_attestation_summary">Elimina Key Attestation de funciones de las aplicaciones</string>
     <string name="features_group_system_adjustments">Ajustes del sistema</string>
@@ -176,6 +183,26 @@
     <string name="hidden_action_delete_rule">Eliminar</string>
     <string name="hidden_message_missing_packages">%1$d Las configuraciones están dirigidas a aplicaciones que no están instaladas en el dispositivo</string>
 
+    <!-- FPS Overlay -->
+    <string name="tool_page_fps_title">FPS</string>
+    <string name="tool_page_fps_summary">Mostrar superposición de FPS y personalizar su apariencia.</string>
+    <string name="fps_title">Superposición FPS</string>
+    <string name="fps_permission_overlay">Se necesita permiso de superposición para mostrar FPS sobre otras apps.</string>
+    <string name="fps_action_grant_overlay">Conceder permiso de superposición</string>
+    <string name="fps_toggle_enable">Activar superposición FPS</string>
+    <string name="fps_position">Posición</string>
+    <string name="fps_size">Tamaño de texto</string>
+    <string name="fps_bg_color">Color de fondo (#RRGGBB)</string>
+    <string name="fps_text_color">Color de texto (#RRGGBB)</string>
+    <string name="fps_bg_alpha">Opacidad de fondo</string>
+    <string name="fps_text_alpha">Opacidad del texto</string>
+    <string name="fps_padding">Relleno (dp)</string>
+    <string name="fps_apply">Aplicar</string>
+    <string name="fps_overlay_value">%1$.1f FPS</string>
+    <string name="fps_overlay_error">FPS no disponible</string>
+    <string name="fps_error_color">Código de color inválido</string>
+    <string name="fps_error_root">Acceso root no otorgado; usando solo FPS del framework.</string>
+
     <!-- Hide Developer -->
     <string name="hide_dev_message">Hola, desarrollador oculto</string>
 
@@ -220,6 +247,9 @@
     <string name="settings_background_title">Imagen de fondo</string>
     <string name="settings_background_not_set">No seleccionado</string>
     <string name="settings_background_set">Imagen de fondo seleccionada</string>
+    <string name="settings_avatar_title">Avatar</string>
+    <string name="settings_avatar_not_set">No seleccionado</string>
+    <string name="settings_avatar_set">Avatar personalizado seleccionado</string>
     <string name="settings_section_about">Acerca de</string>
     <string name="settings_version_title">Versión</string>
     <string name="settings_version_dev_enabled">Modo de desarrollador habilitado</string>
@@ -230,6 +260,17 @@
     <string name="settings_background_status_set">Imagen de fondo seleccionada</string>
     <string name="settings_action_choose_image">Seleccionar imagen</string>
     <string name="settings_action_remove_image">Eliminar imagen</string>
+    <string name="settings_avatar_dialog_title">Avatar del usuario</string>
+    <string name="settings_avatar_dialog_description">Elige una imagen local o pega una URL/usuario de Telegram.</string>
+    <string name="settings_avatar_action_choose_image">Elegir desde el dispositivo</string>
+    <string name="settings_avatar_action_remove">Eliminar avatar</string>
+    <string name="settings_avatar_input_label">URL de imagen o usuario de Telegram</string>
+    <string name="settings_avatar_input_placeholder">https://… o @usuario</string>
+    <string name="settings_avatar_action_fetch">Obtener imagen</string>
+    <string name="settings_avatar_loading">Procesando…</string>
+    <string name="settings_avatar_toast_success">Avatar actualizado</string>
+    <string name="settings_avatar_toast_removed">Avatar eliminado</string>
+    <string name="settings_avatar_toast_error">%1$s</string>
     <string name="settings_background_blur">Desenfoque del fondo de pantalla: %1$.0f dp</string>
     <string name="settings_background_card_opacity">Opacidad de la superposición de la tarjeta: %1$d%%</string>
     <string name="settings_theme_dialog_title">Tema</string>
@@ -363,6 +404,9 @@
     <string name="main_tab_tools">Herramientas</string>
     <string name="main_dialog_preparing_data">Preparación de datos</string>
     <string name="main_dialog_loading_message">Cargando datos esenciales…</string>
+    <string name="main_dialog_framework_title">Se requiere framework</string>
+    <string name="main_dialog_framework_message">Kaorios Toolbox necesita el framework para funcionar.</string>
+    <string name="main_dialog_framework_open">Abrir proyecto en GitHub</string>
     <string name="main_cd_app_logo">Logotipo de la aplicación</string>
     <string name="main_cd_restart">Reiniciar</string>
     <string name="main_cd_settings">Configuración</string>
