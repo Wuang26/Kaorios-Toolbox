@@ -1,13 +1,14 @@
 {
   "TYPE": "user",
   "TAGS": "release-keys",
-  "ID": "ZP11.260515.009",
+  "ID": "CP2A.260705.006",
   "BRAND": "google",
-  "DEVICE": "komodo",
-  "FINGERPRINT": "google/komodo_beta/komodo:CANARY/ZP11.260515.009/15513807:user/release-keys",
+  "DEVICE": "stallion",
+  "FINGERPRINT": "google/stallion/stallion:17/CP2A.260705.006/15641320:user/release-keys",
   "MANUFACTURER": "Google",
-  "MODEL": "Pixel 9 Pro XL",
-  "PRODUCT": "komodo_beta",
-  "RELEASE": "CANARY",
-  "SECURITY_PATCH": "2026-06-01"
+  "MODEL": "Pixel 10a",
+  "PRODUCT": "stallion",
+  "RELEASE": "17",
+  "SECURITY_PATCH": "2026-07-05",
+  "DEVICE_INITIAL_SDK_INT": "34"
 }
