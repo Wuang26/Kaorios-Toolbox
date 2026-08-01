@@ -1,9 +1,9 @@
 {
-  "DEVICE": "cheetah",
-  "FINGERPRINT": "google/cheetah_beta/cheetah:CANARY/ZP11.260618.005/15760424:user/release-keys",
+  "DEVICE": "komodo",
+  "FINGERPRINT": "google\/komodo_beta\/komodo:CANARY\/ZP11.260618.005\/15760424:user\/release-keys",
   "MANUFACTURER": "Google",
-  "MODEL": "Pixel 7 Pro",
-  "PRODUCT": "cheetah_beta",
+  "MODEL": "Pixel 9 Pro XL",
+  "PRODUCT": "komodo_beta",
   "SECURITY_PATCH": "2026-07-05",
   "DEVICE_INITIAL_SDK_INT": "32"
 }
